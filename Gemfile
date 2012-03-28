@@ -1,9 +1,9 @@
 source :rubygems
 
-gem 'travis-core',    :git => 'git://github.com/travis-ci/travis-core', :branch => 'sven', :require => 'travis/engine'
-gem 'travis-support', :git => 'git://github.com/travis-ci/travis-support', :branch => 'sven'
+gem 'travis-core',    git: 'git://github.com/travis-ci/travis-core', require: 'travis/engine'
+gem 'travis-support', git: 'git://github.com/travis-ci/travis-support'
 
-gem 'metriks',        :git => 'git://github.com/mattmatt/metriks.git', :ref => 'source'
+gem 'metriks',        git: 'git://github.com/mattmatt/metriks.git', ref: 'source'
 
 gem 'sinatra',              '~> 1.3.1'
 gem 'rake',                 '~> 0.9.2.2'
@@ -25,12 +25,12 @@ gem 'silent-postgres',      '~> 0.0.8'
 gem 'newrelic_rpm',         '~> 3.3.2'
 
 # heroku
-gem 'puma',                 :git => 'git://github.com/evanphx/puma.git'
+gem 'puma',                 git: 'git://github.com/evanphx/puma.git'
 
 group :development, :test do
-  gem 'rspec',                 '~> 2.9'
-  gem 'data_migrations',       '~> 0.0.1'
-  gem 'micro_migrations', :git => 'git://gist.github.com/2087829.git'
+  gem 'rspec',              '~> 2.9'
+  gem 'data_migrations',    '~> 0.0.1'
+  gem 'micro_migrations',   git: 'git://gist.github.com/2087829.git'
 end
 
 
